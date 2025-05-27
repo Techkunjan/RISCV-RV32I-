@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="57.143 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="404"></NameColumnWidth>
+      <ValueColumnWidth column_width="124"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/Instr" type="array">
+      <obj_property name="ElementShortName">Instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/dp/rf/a1" type="array">
+      <obj_property name="ElementShortName">a1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/dp/rf/rd1" type="array">
+      <obj_property name="ElementShortName">rd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/dp/rf/a2" type="array">
+      <obj_property name="ElementShortName">a2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/dp/rf/rd2" type="array">
+      <obj_property name="ElementShortName">rd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/dp/rf/a3" type="array">
+      <obj_property name="ElementShortName">a3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a3[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/dp/alu/ALUResult" type="array">
+      <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/dp/rf/wd3" type="array">
+      <obj_property name="ElementShortName">wd3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wd3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DataAdr" type="array">
+      <obj_property name="ElementShortName">DataAdr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataAdr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/c/Jump" type="logic">
+      <obj_property name="ElementShortName">Jump</obj_property>
+      <obj_property name="ObjectShortName">Jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/c/Branch" type="logic">
+      <obj_property name="ElementShortName">Branch</obj_property>
+      <obj_property name="ObjectShortName">Branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/c/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/c/ALUSrc" type="logic">
+      <obj_property name="ElementShortName">ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/rvsingle/c/ALUControl" type="array">
+      <obj_property name="ElementShortName">ALUControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUControl[2:0]</obj_property>
+   </wvobject>
+</wave_config>

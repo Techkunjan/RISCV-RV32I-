@@ -1,0 +1,652 @@
+$date
+   Mon Mar 10 22:44:33 2025
+$end
+
+$version
+  2024.2.0
+  $dumpfile ("waveform.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module testbench $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$var wire 32 # WriteData [31:0] $end
+$var wire 32 $ DataAdr [31:0] $end
+$var wire 1 % MemWrite $end
+$scope module dut $end
+$var wire 1 & clk $end
+$var wire 1 ' reset $end
+$var wire 32 # WriteData [31:0] $end
+$var wire 32 $ DataAdr [31:0] $end
+$var wire 1 % MemWrite $end
+$var wire 32 ( PC [31:0] $end
+$var wire 32 ) Instr [31:0] $end
+$var wire 32 * ReadData [31:0] $end
+$scope module rvsingle $end
+$var wire 1 & clk $end
+$var wire 1 ' reset $end
+$var wire 32 ( PC [31:0] $end
+$var wire 32 ) Instr [31:0] $end
+$var wire 1 % MemWrite $end
+$var wire 32 $ ALUResult [31:0] $end
+$var wire 32 # WriteData [31:0] $end
+$var wire 32 * ReadData [31:0] $end
+$var wire 1 + ALUSrc $end
+$var wire 1 , RegWrite $end
+$var wire 1 - Jump $end
+$var wire 1 . Zero $end
+$var wire 2 / ResultSrc [1:0] $end
+$var wire 2 0 ImmSrc [1:0] $end
+$var wire 3 1 ALUControl [2:0] $end
+$var wire 1 2 PCSrc $end
+$scope module c $end
+$var wire 7 3 op [6:0] $end
+$var wire 3 4 funct3 [14:12] $end
+$var wire 1 5 funct7b5 $end
+$var wire 1 . Zero $end
+$var wire 2 / ResultSrc [1:0] $end
+$var wire 1 % MemWrite $end
+$var wire 1 2 PCSrc $end
+$var wire 1 + ALUSrc $end
+$var wire 1 , RegWrite $end
+$var wire 1 - Jump $end
+$var wire 2 0 ImmSrc [1:0] $end
+$var wire 3 1 ALUControl [2:0] $end
+$var wire 2 6 ALUOp [1:0] $end
+$var wire 1 7 Branch $end
+$scope module md $end
+$var wire 7 3 op [6:0] $end
+$var reg 2 8 ResultSrc [1:0] $end
+$var reg 1 9 MemWrite $end
+$var reg 1 : Branch $end
+$var reg 1 ; ALUSrc $end
+$var reg 1 < RegWrite $end
+$var reg 1 = Jump $end
+$var reg 2 > ImmSrc [1:0] $end
+$var reg 2 ? ALUOp [1:0] $end
+$var reg 11 @ controls [10:0] $end
+$upscope $end
+$scope module ad $end
+$var wire 1 A opb5 $end
+$var wire 3 4 funct3 [14:12] $end
+$var wire 1 5 funct7b5 $end
+$var wire 2 6 ALUOp [1:0] $end
+$var reg 3 B ALUControl [2:0] $end
+$var wire 1 C RtypeSub $end
+$upscope $end
+$upscope $end
+$scope module dp $end
+$var wire 1 & clk $end
+$var wire 1 ' reset $end
+$var wire 2 / ResultSrc [1:0] $end
+$var wire 1 2 PCSrc $end
+$var wire 1 + ALUSrc $end
+$var wire 1 , RegWrite $end
+$var wire 2 0 ImmSrc [1:0] $end
+$var wire 3 1 ALUControl [2:0] $end
+$var wire 1 . Zero $end
+$var wire 32 ( PC [31:0] $end
+$var wire 32 ) Instr [31:0] $end
+$var wire 32 $ ALUResult [31:0] $end
+$var wire 32 # WriteData [31:0] $end
+$var wire 32 * ReadData [31:0] $end
+$var wire 32 D PCNext [31:0] $end
+$var wire 32 E PCPlus4 [31:0] $end
+$var wire 32 F PCTarget [31:0] $end
+$var wire 32 G ImmExt [31:0] $end
+$var wire 32 H SrcA [31:0] $end
+$var wire 32 I SrcB [31:0] $end
+$var wire 32 J Result [31:0] $end
+$scope module pcreg $end
+$var wire 1 & clk $end
+$var wire 1 ' reset $end
+$var wire 8 K d [7:0] $end
+$var reg 8 L q [7:0] $end
+$upscope $end
+$scope module pcadd4 $end
+$var wire 32 ( a [31:0] $end
+$var wire 32 M b [31:0] $end
+$var wire 32 E y [31:0] $end
+$upscope $end
+$scope module pcaddbranch $end
+$var wire 32 ( a [31:0] $end
+$var wire 32 G b [31:0] $end
+$var wire 32 F y [31:0] $end
+$upscope $end
+$scope module pcmux $end
+$var wire 32 E d0 [31:0] $end
+$var wire 32 F d1 [31:0] $end
+$var wire 1 2 s $end
+$var wire 32 D y [31:0] $end
+$upscope $end
+$scope module rf $end
+$var wire 1 & clk $end
+$var wire 1 , we3 $end
+$var wire 5 N a1 [19:15] $end
+$var wire 5 O a2 [24:20] $end
+$var wire 5 P a3 [11:7] $end
+$var wire 32 J wd3 [31:0] $end
+$var reg 32 Q rd1 [31:0] $end
+$var reg 32 R rd2 [31:0] $end
+$upscope $end
+$scope module ext $end
+$var wire 25 S instr [31:7] $end
+$var wire 2 0 immsrc [1:0] $end
+$var reg 32 T immext [31:0] $end
+$upscope $end
+$scope module srcbmux $end
+$var wire 32 # d0 [31:0] $end
+$var wire 32 G d1 [31:0] $end
+$var wire 1 + s $end
+$var wire 32 I y [31:0] $end
+$upscope $end
+$scope module alu $end
+$var wire 3 1 ALUControl [2:0] $end
+$var wire 32 H SrcA [31:0] $end
+$var wire 32 I SrcB [31:0] $end
+$var reg 32 U ALUResult [31:0] $end
+$var reg 1 V Zero $end
+$upscope $end
+$scope module resultmux $end
+$var wire 32 $ d0 [31:0] $end
+$var wire 32 * d1 [31:0] $end
+$var wire 32 E d2 [31:0] $end
+$var wire 2 / s [1:0] $end
+$var wire 32 J y [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module imem $end
+$var wire 32 ( a [31:0] $end
+$var reg 32 W rd [31:0] $end
+$upscope $end
+$scope module dmem $end
+$var wire 1 & clk $end
+$var wire 1 % we $end
+$var wire 32 $ a [31:0] $end
+$var wire 32 # wd [31:0] $end
+$var reg 32 X rd [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1"
+bx #
+bx $
+x%
+0&
+1'
+bz00000000 (
+bx )
+bx *
+x+
+x,
+x-
+x.
+bx /
+bx 0
+bx 1
+x2
+bx 3
+bx 4
+x5
+bx 6
+x7
+bx 8
+x9
+x:
+x;
+x<
+x=
+bx >
+bx ?
+bx @
+xA
+bx B
+xC
+bx D
+bx E
+bx F
+bx G
+bx H
+bx I
+bx J
+bx K
+b0 L
+b100 M
+bx N
+bx O
+bx P
+bx Q
+bx R
+bx S
+bx T
+bx U
+xV
+bx W
+bx X
+$end
+
+#5000
+1!
+1&
+
+#10000
+0!
+0&
+
+#15000
+1!
+1&
+
+#20000
+0!
+0"
+0&
+0'
+
+#25000
+1!
+1&
+bzxxxxxxxx (
+bx L
+
+#30000
+0!
+0&
+
+#35000
+1!
+1&
+
+#40000
+0!
+0&
+
+#45000
+1!
+1&
+
+#50000
+0!
+0&
+
+#55000
+1!
+1&
+
+#60000
+0!
+0&
+
+#65000
+1!
+1&
+
+#70000
+0!
+0&
+
+#75000
+1!
+1&
+
+#80000
+0!
+0&
+
+#85000
+1!
+1&
+
+#90000
+0!
+0&
+
+#95000
+1!
+1&
+
+#100000
+0!
+0&
+
+#105000
+1!
+1&
+
+#110000
+0!
+0&
+
+#115000
+1!
+1&
+
+#120000
+0!
+0&
+
+#125000
+1!
+1&
+
+#130000
+0!
+0&
+
+#135000
+1!
+1&
+
+#140000
+0!
+0&
+
+#145000
+1!
+1&
+
+#150000
+0!
+0&
+
+#155000
+1!
+1&
+
+#160000
+0!
+0&
+
+#165000
+1!
+1&
+
+#170000
+0!
+0&
+
+#175000
+1!
+1&
+
+#180000
+0!
+0&
+
+#185000
+1!
+1&
+
+#190000
+0!
+0&
+
+#195000
+1!
+1&
+
+#200000
+0!
+0&
+
+#205000
+1!
+1&
+
+#210000
+0!
+0&
+
+#215000
+1!
+1&
+
+#220000
+0!
+0&
+
+#225000
+1!
+1&
+
+#230000
+0!
+0&
+
+#235000
+1!
+1&
+
+#240000
+0!
+0&
+
+#245000
+1!
+1&
+
+#250000
+0!
+0&
+
+#255000
+1!
+1&
+
+#260000
+0!
+0&
+
+#265000
+1!
+1&
+
+#270000
+0!
+0&
+
+#275000
+1!
+1&
+
+#280000
+0!
+0&
+
+#285000
+1!
+1&
+
+#290000
+0!
+0&
+
+#295000
+1!
+1&
+
+#300000
+0!
+0&
+
+#305000
+1!
+1&
+
+#310000
+0!
+0&
+
+#315000
+1!
+1&
+
+#320000
+0!
+0&
+
+#325000
+1!
+1&
+
+#330000
+0!
+0&
+
+#335000
+1!
+1&
+
+#340000
+0!
+0&
+
+#345000
+1!
+1&
+
+#350000
+0!
+0&
+
+#355000
+1!
+1&
+
+#360000
+0!
+0&
+
+#365000
+1!
+1&
+
+#370000
+0!
+0&
+
+#375000
+1!
+1&
+
+#380000
+0!
+0&
+
+#385000
+1!
+1&
+
+#390000
+0!
+0&
+
+#395000
+1!
+1&
+
+#400000
+0!
+0&
+
+#405000
+1!
+1&
+
+#410000
+0!
+0&
+
+#415000
+1!
+1&
+
+#420000
+0!
+0&
+
+#425000
+1!
+1&
+
+#430000
+0!
+0&
+
+#435000
+1!
+1&
+
+#440000
+0!
+0&
+
+#445000
+1!
+1&
+
+#450000
+0!
+0&
+
+#455000
+1!
+1&
+
+#460000
+0!
+0&
+
+#465000
+1!
+1&
+
+#470000
+0!
+0&
+
+#475000
+1!
+1&
+
+#480000
+0!
+0&
+
+#485000
+1!
+1&
+
+#490000
+0!
+0&
+
+#495000
+1!
+1&
+
+#500000
+0!
+0&
+
+#505000
+1!
+1&
+
+#510000
+0!
+0&
+
+#515000
+1!
+1&
