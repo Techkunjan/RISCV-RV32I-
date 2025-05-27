@@ -26,4 +26,6 @@ Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'K:/Vivado/Vivado/2024.2/data/ip'upopen_project: Time (s): cpu = 00:00:19 ; elINFO: [Common 17-206] Exiting Vivado at Tue May 27 13:19:24 2025upda
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'K:/Vivado/Vivado/2024.2/data/ip'upopen_project: Time (s): cpu = 00:00:19 ; elINFO: [Common 17-206] Exiting Vivado at Tue May 27 13:19:24 2025update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 27 13:45:53 2025...
