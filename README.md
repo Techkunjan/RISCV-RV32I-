@@ -2,8 +2,6 @@
 
 This repository presents the design and implementation of a single-cycle RISC-V RV32I processor using Verilog HDL. It serves as an educational project to understand the fundamentals of processor architecture and the RISC-V instruction set.
 
-![RISC-V Processor Diagram](https://bit-spinner.com/rv32i/rv32i-introduction)
-
 ## 🚀 Project Overview
 
 The project involves creating a single-cycle processor that executes instructions from the RV32I subset of the RISC-V ISA. The design emphasizes simplicity and clarity, making it suitable for educational purposes and as a foundation for more complex processor designs.
